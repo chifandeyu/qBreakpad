@@ -5,8 +5,13 @@ QT += core network
 QT -= gui
 
 CONFIG -= app_bundle
-CONFIG += debug_and_release warn_on
+#CONFIG += debug_and_release warn_on
 CONFIG += thread exceptions rtti stl
+
+CONFIG += force_debug_info
+
+QMAKE_CFLAGS_RELEASE += -g
+QMAKE_CXXFLAGS_RELEASE += -g
 
 # without c++11 & AppKit library compiler can't solve address for symbols
 CONFIG += c++11

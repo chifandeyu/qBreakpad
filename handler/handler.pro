@@ -9,7 +9,12 @@ QT += core network
 
 OBJECTS_DIR = _build/obj
 MOC_DIR = _build
-DESTDIR = $$PWD
+
+CONFIG(release, debug|release): {
+    DESTDIR = $$PWD/lib/release
+}else{
+    DESTDIR = $$PWD/lib/debug
+}
 
 ### qBreakpad config
 include($$PWD/../config.pri)

@@ -1,6 +1,7 @@
 [submodule "third_party/breakpad"]
 	path = third_party/breakpad
-	url = https://github.com/google/breakpad
+	url = https://github.com/chifandeyu/breakpad
 [submodule "third_party/lss"]
 	path = third_party/lss
-	url = https://github.com/cpp-pm/linux-syscall-support
+	url = https://github.com/chifandeyu/linux-syscall-support
+                 
